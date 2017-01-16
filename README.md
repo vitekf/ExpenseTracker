@@ -1,5 +1,5 @@
 # ExpenseTracker
-Simple expense tracker writen in PHP
+Simple expense tracker written in PHP
 
 Optimized for mobile phones
 

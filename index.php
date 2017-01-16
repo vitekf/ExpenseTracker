@@ -61,7 +61,7 @@
   <div style="border:1px solid #909090; padding:3px; text-align: left; font-size: 12px; color: grey">
   <?php
   $file = file("./expense.csv");
-  for ($i = count($file)-1; $i > max(0, count($file)-6); $i--) {
+  for ($i = count($file)-1; $i >= max(0, count($file)-5); $i--) {
     $line = explode(";", $file[$i]);
     echo $line[0].", &nbsp;$".$line[1].", &nbsp;".$line[3]." (".substr($line[8],0,1).")<br>\n";
   }
